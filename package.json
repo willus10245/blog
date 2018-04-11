@@ -1,0 +1,38 @@
+{
+  "name": "blog",
+  "description": "Scott Wiggins' personal blog",
+  "version": "0.0.1",
+  "author": "Scott Wiggins <dscottwiggins@gmail.com",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-glamor": "^1.6.13",
+    "gatsby-plugin-typography": "^1.7.18",
+    "glamorous": "^4.12.2",
+    "react": "^16.3.1",
+    "typography": "^0.16.6",
+    "typography-theme-kirkham": "^0.16.3"
+  },
+  "keywords": [
+    "gatsby",
+    "blog",
+    "react"
+  ],
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.11.1"
+  }
+}
