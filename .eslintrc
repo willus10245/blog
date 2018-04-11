@@ -5,7 +5,18 @@
     "prettier/react"
   ],
   "rules": {
-    "indent": ["error", 2],
+    "indent": [
+      "error",
+      2
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "warn",
+      {
+        "aspects": [
+          "invalidHref"
+        ]
+      }
+    ],
     "prettier/prettier": [
       "error",
       {
@@ -30,7 +41,8 @@
           ".jsx"
         ]
       }
-    ]
+    ],
+    "react/prop-types": "off"
   },
   "plugins": [
     "prettier"
