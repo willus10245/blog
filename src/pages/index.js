@@ -1,5 +1,6 @@
 import React from 'react';
 import g from 'glamorous';
+import Link from 'gatsby-link';
 
 import { rhythm } from '../utils/typography';
 
@@ -11,9 +12,11 @@ export default ({ data }) => (
     <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
-        <g.H3 marginBottom={rhythm(1 / 4)}>
-          {node.frontmatter.title} <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
-        </g.H3>
+        <Link to={node.fields.slug} css={{ textDecoration: `none`, color: `inherit` }}>
+          <g.H3 marginBottom={rhythm(1 / 4)}>
+            {node.frontmatter.title} <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
+          </g.H3>
+        </Link>
         <p>{node.excerpt}</p>
       </div>
     ))}
@@ -22,7 +25,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
@@ -32,6 +35,9 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
           }
           excerpt
+          fields {
+            slug
+          }
         }
       }
     }
