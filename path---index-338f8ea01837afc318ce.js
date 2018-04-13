@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{609:function(a,e){a.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{id:"/Users/kon8007/gatsby/blog/src/pages/gaslight.md absPath of file >>> MarkdownRemark",frontmatter:{title:"Gaslight Apprenticeship: First Month",date:"11 April, 2018"},excerpt:"I am a month and a half into my apprenticeship with Gaslight and it has been an amazing experience. I have been learning so much, and…",fields:{slug:"/gaslight/"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-338f8ea01837afc318ce.js.map
