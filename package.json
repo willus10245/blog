@@ -9,7 +9,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "gatsby": "^1.9.247",
