@@ -54,6 +54,11 @@ defmodule Blog do
   def layout(assigns) do
     ~H"""
     <html>
+      <head>
+        <title>Scott's Personal website!!</title>
+        <link rel="stylesheet" href="/assets/app.css" />
+        <script type="text/javascript" src="/assets/app.js" />
+      </head>
       <body>
         <%= render_slot(@inner_block) %>
       </body>
